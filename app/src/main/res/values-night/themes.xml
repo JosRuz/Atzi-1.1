@@ -2,6 +2,22 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Atzi11" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">@color/primario</item>
+        <item name="colorPrimaryVariant">@color/primario</item>
+
+        <item name="colorSecondary">@color/secundario</item>
+        <item name="colorSecondaryVariant">@color/secundario</item>
+
+        <item name="colorAccent">@color/acento</item>
+
+        <item name="colorOnBackground">@color/fondo</item>
+        <item name="colorButtonNormal">@color/fondo</item>
+
+        <item name="colorOnError">@color/peligro</item>
+
+        <item name="android:statusBarColor">@color/primario</item>
+
+        <item name="android:windowBackground">@color/fondooscuro</item>
+
     </style>
 </resources>

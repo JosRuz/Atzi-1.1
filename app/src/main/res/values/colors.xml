@@ -5,6 +5,8 @@
     <color name="secundario">#00C4FF</color>
     <color name="acento">#FFB900</color>
     <color name="fondo">#F5F5F5</color>
+    <color name="fondooscuro">#333333</color>
+
     <color name="texto">#333333</color>
     <color name="exito">#00B74A</color>
     <color name="advertencia">#FF8800</color>
@@ -12,5 +14,4 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="algo">#FFFFFFFF</color>
 </resources>
