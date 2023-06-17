@@ -21,7 +21,7 @@
             android:id="@+id/imageView"
             android:layout_width="147dp"
             android:layout_height="175dp"
-            app:srcCompat="@drawable/atzi_logo_transparent" />
+            app:srcCompat="@drawable/atzilogo" />
 
         <TextView
             android:id="@+id/textView"
