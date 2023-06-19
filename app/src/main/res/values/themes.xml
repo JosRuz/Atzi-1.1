@@ -18,6 +18,7 @@
         <item name="android:statusBarColor">@color/primario</item>
 
         <item name="android:windowBackground">@color/fondo</item>
+
     </style>
 
     <style name="Theme.Atzi11" parent="Base.Theme.Atzi11" />
