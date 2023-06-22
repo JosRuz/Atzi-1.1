@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1089061267471",
+    "project_id": "atzi-e5b13",
+    "storage_bucket": "atzi-e5b13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1089061267471:android:0bec748eb8afde8e215b7a",
+        "android_client_info": {
+          "package_name": "jos.android.atzi11"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1089061267471-1n973313fv6hs7imisqnchui62ss6na2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAghOMYNCIOwox5JrR1EMleylhIpMHTjcY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1089061267471-1n973313fv6hs7imisqnchui62ss6na2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
