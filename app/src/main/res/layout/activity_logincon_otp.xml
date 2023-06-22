@@ -80,11 +80,11 @@
         android:layout_weight="5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingresa tu numero telefonico"
+        android:text="Ingresa el codigo que se te envió a tu celular"
         android:layout_gravity="center_vertical"
         android:letterSpacing="0.08"
         android:textStyle="bold"
-        android:textSize="20sp"
+        android:textSize="20dp"
         android:textColor="@color/texto"/>
 
     <LinearLayout
@@ -94,18 +94,14 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-        <com.hbb20.CountryCodePicker
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:ccp_showFlag="false"
-            app:ccp_showNameCode="false"/>
-
         <EditText
+            android:id="@+id/txt_codigo_celular"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:hint="telefono"
-            android:inputType="phone"
+            android:maxLength="6"
+            android:hint="codigo"
+            android:inputType="number"
             android:layout_margin="10dp"
             android:background="@drawable/esquina_redonda_edittext"
             android:elevation="5dp"/>
@@ -113,24 +109,33 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="5"
+        android:layout_weight="10"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:gravity="center_vertical"
         android:orientation="vertical">
 
         <Button
+            android:id="@+id/btn_codigo_ingresado"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Siguiente"/>
 
         <ProgressBar
+            android:id="@+id/pb_progreso_verificar_codigo"
             android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:indeterminateTint="@color/acento"
             android:layout_gravity="center"/>
 
-
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/lbl_reenviar_codigo"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Reenviar codigo en 30 segundos"/>
 
 </LinearLayout>

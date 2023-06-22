@@ -4,24 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginConCelular"
+    tools:context=".LoginNombreUsu"
     android:gravity="center"
     android:orientation="vertical"
     android:layout_margin="20dp"
     android:weightSum="100">
-    
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_weight="20">
-        
+
         <RelativeLayout
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_margin="10dp"
             android:background="@drawable/fondo_circular"
-            android:backgroundTint="@color/primario">
+            android:backgroundTint="#C3C3C3">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_height="32dp"
             android:layout_margin="10dp"
             android:background="@drawable/fondo_circular"
-            android:backgroundTint="#C3C3C3">
+            android:backgroundTint="@color/primario">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -66,21 +66,21 @@
                 android:textSize="18dp"/>
 
         </RelativeLayout>
-        
+
     </LinearLayout>
-    
+
     <ImageView
         android:layout_weight="20"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/icono_celular"
+        android:src="@drawable/icono_persona"
         app:tint="@color/primario"/>
 
     <TextView
         android:layout_weight="5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ingresa tu numero telefonico"
+        android:text="Ingresa tu nombre de usuario"
         android:layout_gravity="center_vertical"
         android:letterSpacing="0.08"
         android:textStyle="bold"
@@ -93,20 +93,13 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center">
-        
-        <com.hbb20.CountryCodePicker
-            android:id="@+id/txt_codigopais"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:ccp_showFlag="false"
-            app:ccp_showNameCode="false"/>
 
         <EditText
-            android:id="@+id/txt_numero_telefono"
+            android:id="@+id/txt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="10dp"
-            android:hint="telefono"
+            android:hint="nombre de usuario"
             android:inputType="phone"
             android:layout_margin="10dp"
             android:background="@drawable/esquina_redonda_edittext"
@@ -122,13 +115,13 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_enviar_codigo"
+            android:id="@+id/btn_entrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Enviar codigo"/>
+            android:text="Entrar"/>
 
         <ProgressBar
-            android:id="@+id/pb_progreso_enviar_codigo"
+            android:id="@+id/pb_progreso_entrar"
             android:layout_width="32dp"
             android:layout_height="wrap_content"
             android:indeterminateTint="@color/acento"
