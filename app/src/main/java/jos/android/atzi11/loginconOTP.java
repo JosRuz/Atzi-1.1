@@ -22,7 +22,7 @@ public class loginconOTP extends AppCompatActivity {
         numeroCelular=getIntent().getExtras().getString("numero");
         Toast.makeText(this, numeroCelular, Toast.LENGTH_LONG).show();
 
-
+        //comentario inutil para mantener mi racha
 
     }
 }
