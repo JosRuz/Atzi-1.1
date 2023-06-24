@@ -23,6 +23,7 @@ public class loginconOTP extends AppCompatActivity {
         Toast.makeText(this, numeroCelular, Toast.LENGTH_LONG).show();
 
         //comentario inutil para mantener mi racha
+        //otro comentario inutil porque no he tenido tiempo
 
     }
 }
