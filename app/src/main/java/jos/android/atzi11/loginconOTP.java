@@ -24,6 +24,8 @@ import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.TimeUnit;
 
 import jos.android.atzi11.utils.AndroidUtil;
@@ -63,9 +65,15 @@ public class loginconOTP extends AppCompatActivity {
             ponerEnProgreso(true);
         });
 
+        reenviarOTP.setOnClickListener(v -> {
+            enviarOtp(numeroCelular,true);
+        });
+
     }
 
     void enviarOtp(String numeroCelular,boolean seReenvio){
+
+        comenzarTiempoDeReenvio();
 
         ponerEnProgreso(true);
         PhoneAuthOptions.Builder builder=
@@ -101,6 +109,25 @@ public class loginconOTP extends AppCompatActivity {
             PhoneAuthProvider.verifyPhoneNumber(builder.build());
         }
 
+    }
+
+    private void comenzarTiempoDeReenvio() {
+        reenviarOTP.setEnabled(false);
+        Timer timer=new Timer();
+        timer.scheduleAtFixedRate(new TimerTask() {
+            @Override
+            public void run() {
+                timeoutSeconds--;
+                reenviarOTP.setText("Reenviar código en "+timeoutSeconds+" segundos");
+                if (timeoutSeconds<=0){
+                    timeoutSeconds=60L;
+                    timer.cancel();
+                    runOnUiThread(() -> {
+                        reenviarOTP.setEnabled(true);
+                    });
+                }
+            }
+        },0,1000);
     }
 
     private void signIn(PhoneAuthCredential phoneAuthCredential) {
