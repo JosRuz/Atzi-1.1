@@ -1,6 +1,7 @@
 package jos.android.atzi11.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 
+import jos.android.atzi11.ChatActivity;
 import jos.android.atzi11.R;
 import jos.android.atzi11.model.UserModel;
 import jos.android.atzi11.utils.FirebaseUtil;
@@ -35,7 +37,10 @@ public class SearchUserRecyclerAdapter extends FirestoreRecyclerAdapter<UserMode
         }
 
         holder.itemView.setOnClickListener(view -> {
-                       //navegar a la actividad de chat
+            //ir a pantalla de chat
+            Intent intent=new Intent(context, ChatActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            context.startActivity(intent);
         });
     }
 
