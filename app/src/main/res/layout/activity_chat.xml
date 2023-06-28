@@ -22,7 +22,8 @@
             android:textColor="@color/white"
             android:layout_marginStart="10dp"
             android:layout_centerVertical="true"
-            android:layout_toRightOf="@+id/profile_pic_layout"/>
+            android:layout_toRightOf="@+id/profile_pic_layout"
+            android:id="@+id/other_username"/>
 
         <include layout="@layout/profile_pic_view"
             android:id="@+id/profile_pic_layout"
@@ -43,6 +44,7 @@
     </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/chat_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolbar"
@@ -54,17 +56,21 @@
         android:layout_alignParentBottom="true"
         android:padding="8dp"
         android:id="@+id/bottom_layout">
-        
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Escribe el mensaje aquí"
             android:layout_centerInParent="true"
-            android:layout_margin="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toLeftOf="@+id/btn_enviar_mensaje"
             android:background="@drawable/esquina_redonda_edittext"
             android:elevation="4dp"
+            android:hint="Escribe el mensaje aquí"
             android:padding="10dp"
-            android:layout_toLeftOf="@+id/btn_enviar_mensaje"/>
+            android:id="@+id/txt_mensaje_chat_entrada"/>
 
         <ImageButton
             android:id="@+id/btn_enviar_mensaje"
