@@ -101,6 +101,7 @@
             android:padding="10dp"
             android:maxLength="6"
             android:hint="codigo"
+            android:textColor="@color/black"
             android:inputType="number"
             android:layout_margin="10dp"
             android:background="@drawable/esquina_redonda_edittext"
