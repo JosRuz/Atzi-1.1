@@ -100,7 +100,7 @@
             android:layout_height="wrap_content"
             android:padding="10dp"
             android:hint="nombre de usuario"
-            android:inputType="phone"
+            android:inputType="text"
             android:layout_margin="10dp"
             android:background="@drawable/esquina_redonda_edittext"
             android:elevation="5dp"/>
