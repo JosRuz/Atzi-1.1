@@ -14,4 +14,7 @@
 
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="chat_color_sender">#FF8800</color>
+    <color name="chat_color_reciver">#007ACC</color>
 </resources>
